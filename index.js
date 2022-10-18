@@ -5,6 +5,7 @@ let button = Array.from(document.getElementsByClassName("button"));
 
 // button click function target element
 
+
 button.map(button => {
     button.addEventListener('click', (e) => {
 
@@ -29,8 +30,8 @@ button.map(button => {
             case "=":
                 try {
                     // eval mathematics function  
-
                     display.innerText = eval(display.innerText);
+
                 } catch {
                     display.innerText = " Error: ";
                     // invalid mathematics expression then show Error
@@ -43,10 +44,10 @@ button.map(button => {
 
             default:
                 //  adding  innerText in display on 
-
                 display.innerText += e.target.innerText;
             // break;
         }
+
 
 
 
