@@ -23,7 +23,7 @@ button.map(button => {
                 // if display has inner text 
                 if (display.innerText) {
                     // remove last Character from display
-                    display.innerText = display.innerText.slice(0, -1);
+                    display.innerText = display.innerText.slice(0,-1);
                 }
                 break;
 
@@ -33,8 +33,8 @@ button.map(button => {
                     display.innerText = eval(display.innerText);
 
                 } catch {
-                    display.innerText = " Error: ";
                     // invalid mathematics expression then show Error
+                    display.innerText = " Error: ";
                 }
                 break;
 
