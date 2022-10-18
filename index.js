@@ -34,7 +34,7 @@ button.map(button => {
 
                 } catch {
                     // invalid mathematics expression then show Error
-                    display.innerText = " Error: ";
+                    display.innerText = " Error:( ";
                 }
                 break;
 
